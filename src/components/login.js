@@ -23,7 +23,7 @@ function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [erroUsuario, setErroUsuario] = useState('');
-  const [exibirLogin, setExibirLogin] = useState(true);
+  const [exibirLogin, setExibirLogin] = useState(false);
 // cores do tema dakr 
 
   const darkTheme = createTheme({
