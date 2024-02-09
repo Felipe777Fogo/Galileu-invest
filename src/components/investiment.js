@@ -26,10 +26,10 @@ function Investments() {
     const [valorDebentureInvestido, setValorDebentureInvestido] = useState(0);
     const [valorTesouroInvestido, setValorTesouroInvestido] = useState(0);
     const [valorPoupancaInvestido, setValorPoupancaInvestido] = useState(0);
-    const [ativarCDB, setAtivarCDB] = useState(false);
-    const [ativarDebenture, setAtivarDebenture] = useState(false);
-    const [ativarTesouro, setAtivarTesouro] = useState(false);
-    const [ativarPoupanca, setAtivarPoupanca] = useState(false);
+    const [ativarCDB, setAtivarCDB] = useState(!true);
+    const [ativarDebenture, setAtivarDebenture] = useState(!true);
+    const [ativarTesouro, setAtivarTesouro] = useState(!true);
+    const [ativarPoupanca, setAtivarPoupanca] = useState(!true);
     const [valorInvestido, setValorInvestido] = useState(0);
 
 
@@ -228,7 +228,7 @@ function Investments() {
                             style={{background:'black'}}
                             value={valorCDB}
                             onChange={handleChangeValorCDB}
-                            disabled={ativarCDB}
+                            disabled={!ativarCDB}
                         />
                         <Button
                             fullWidth

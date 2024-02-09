@@ -130,7 +130,7 @@ function SignIn() {
               required
               fullWidth
               id="email"
-              label="Email"
+              label="E-mail"
               autoFocus
               sx={{ bgcolor: 'background.paper' }}
               value={email}
@@ -141,8 +141,8 @@ function SignIn() {
               margin="normal"
               required
               fullWidth
-              id="password"
-              label="Password"
+              id="Senha"
+              label="Senha"
               type="password"
               sx={{ bgcolor: 'background.paper' }}
               value={password}
